@@ -105,3 +105,33 @@ a {
     color-scheme: dark;
   }
 }
+
+.label-certification::before{
+  content: "*";
+  color: #f56c6c;
+  margin-right: 4px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  color: gray !important;
+  font-weight: 700;
+}
+ .nav-pills .nav-link.active {
+  background-color: #009c6a !important;
+}
+.tabs a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 440px) {
+  .every .btn-report-rate{
+    width: 50% !important;
+    font-size: 12px;
+  }
+  .swiper-slide{
+    width: 100% !important;
+  }
+  .swiper-slide img{
+    width: 100%;
+  }
+}

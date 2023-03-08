@@ -1,0 +1,43 @@
+.top-box{
+    background-color: #4a4e5f;
+}
+.top-head .list-group-item{
+    border-bottom: 1px dashed #cbcbcb !important;
+    padding-left: 0;
+}
+.top-head .list-group-numbered>.list-group-item::before {
+    background-color: #009c6a;
+    border-radius: 15px;
+    padding: 2px 5px;
+    color: #fff;
+    opacity: .45;
+    font-size: 12px;
+}
+.top-head .game-top .item{
+    background-image: linear-gradient(90deg, #def8f0, #c6eadf);
+    font-size: 14px;
+    cursor: pointer;
+}
+.navbar-nav.menu a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-nav.menu a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 440px){
+    .top-box>div{
+        height: 30px;
+    }
+    .top-box .top-box-head{
+        display: none;
+    }
+    .navbar form{
+        width: 100%;
+    }
+    .navbar form input{
+        width: 100%;
+        font-size: 12px;
+    }
+}

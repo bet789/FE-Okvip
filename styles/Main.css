@@ -1,0 +1,33 @@
+.main .best-withdraw .one-company{
+    position: relative;
+}
+.main .best-withdraw .one-company span{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAhpJREFUOBGtlLtrFFEUxr/vZrMLKmIVEEElRYSojUGxCAQCqWTcPCcgvqp0/gFa2dlZKQhWNhJm40Z3i2Q7W0M0IKRRkOCDaBMJKCQb9x7PzDi7M7MxhllvMfee12/OuY9D7DFkeaYba1/PwBZW6Zbqe7gmTCYhxQQRIT6sL6Ahb4DtFXnmXIyZId7UMSmP9cR10ZrRIj1LqXgd1j5p6Wlh8FTlH7AYBqQPxC8YM8jJF69afkAuLkRrmR89ibq9F8nhLEZhVxM60XixV1S3O1TmnNMQXoKVC6g3RtTxcALwN0FwPm0Kyhev2K/lrEAkn3b4p0zWkes6y/H5d5FveFDk0UxAn+InstOoSckpRtAw09q1g9jc3MgMbtK4iEMnRpunL57zEoKhyJ55NpyI3VPdm87HT5jcUgDVLIe1dP/EOxsGtzlR/mykOnNASY87o2k0+RaTAw99jsHW+ojuZW/HUOAjedeGUNP9Wn/z7T9AB7UfdAVQfw/AQr+m/yB4y1npIkeAnYEwU/1qW9ugW7mlzWE8KzOIoxT8uXlPI5h4l1f1Juiz3ff4rlUu67mUOV155Eft0qW4pG9vP9Atjb8Bt1IiKfEUYpf/j5pSiztoLe+1oE8JnS8Yc5/TVS8NDExpZ05VZmHoKugmCuY43Wofes71qu6O/mA78Ce+QPKpftsite1py9S+0v0+pT3XQZ5zHHu+1u4Ran4DQ0igxm/1bVwAAAAASUVORK5CYII=) 50%;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgb(167 70 0 / 50%);
+    color: #fff;
+    z-index: 9;
+}
+
+@media screen and (max-width: 440px) {
+    .main .top-head{
+        font-size: 12px;
+    }
+    .best-withdraw .col-2{
+        width: 50%;
+        font-size: 12px;
+    }
+    .form-certificate label{
+        width: 100% !important;
+        text-align: start;
+    }
+}

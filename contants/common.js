@@ -1,0 +1,9 @@
+export const URL_789BET = "https://www.789bet111.com/";
+export const URL_789BET_DIENDAN = "https://www.facebook.com/6689bet";
+export const URL_789BET_DAGA = "https://www.789bet111.com/Lobby/CockFighting";
+export const URL_789BET_XOSO = "https://www.789bet111.com/Lobby/Lottery";
+export const URL_789BET_THETHAO = "https://www.789bet111.com/Lobby/Sport";
+export const URL_789BET_TROCHOI = "https://www.789bet111.com/Lobby/Game";
+export const URL_789BET_BANCA = "https://www.789bet111.com/Lobby/Fish";
+export const URL_789BET_ESPORT = "https://www.789bet111.com/Lobby/Live";
+export const URL_API = "https://api.okvip.com";
