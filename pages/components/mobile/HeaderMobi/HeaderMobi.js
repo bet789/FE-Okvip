@@ -1,18 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
-import HeaderMobi from "./components/mobile/HeaderMobi/HeaderMobi";
-import MainMobi from "./components/mobile/MainMobi/MainMobi";
-import MenuMobi from "./components/mobile/MenuMobi/MenuMobi";
-const inter = Inter({ subsets: ["latin"] });
+import Link from "next/link";
+import React from "react";
+import TopBox from "../../Header/TopBox";
 
-export default function Home() {
+const HeaderMobi = () => {
+
   return (
-    <>
+    <div>
       <Head>
         <title>
           Okvip.com là diễn đàn chuyên tổng hợp các thông tin, đánh giá những
@@ -31,20 +25,40 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <div className="screen-desktop">
-          <Header/>
-          <Main/>
-          <Footer />
+      <TopBox />
+      <nav className="mobi-banner">
+        <div className="logo-mobile">
+          <div className="menu-mobile">
+            <img
+              src="/img_mobile/icon_menu_mobi.png"
+              width={24}
+              height={24}
+            />
+          </div>
+          <Link
+            className="site-brand"
+            style={{ cursor: "pointer", display: "flex" }}
+            href="/"
+          >
+            <img
+              src="/img_mobile/okvip-logo-mobi.png"
+              width={125}
+              height={30}
+              style={{ objectFit: "contain" }}
+            />
+          </Link>
+          <div className="profile-mobile">
+            <img
+              src="/img_mobile/icon_profile_mobi.png"
+              width={24}
+              height={24}
+            />
+          </div>
         </div>
-        <div className="screen-mobile">
-          <HeaderMobi/>
-          <MainMobi/>
-          <MenuMobi/>
-        </div>
-      </div>
-
-
-    </>
+      </nav>
+      
+    </div>
   );
-}
+};
+
+export default HeaderMobi;
