@@ -1,10 +1,30 @@
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
 import TopBox from "../../Header/TopBox";
 
-const HeaderMobi = () => {
+const isBrowser = () => typeof window !== "undefined";
 
+const HeaderMobi = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const [navMenu, setNavMenu] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleClickMenuMobile = () => {
+    setNavMenu(!navMenu);
+  };
   return (
     <div>
       <Head>
@@ -26,13 +46,16 @@ const HeaderMobi = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TopBox />
-      <nav className="mobi-banner">
+      <nav
+        className={`${scrollY > 100 ? "mobi-banner sticky" : "mobi-banner"}`}
+      >
         <div className="logo-mobile">
-          <div className="menu-mobile">
+          <div className="menu-mobile" onClick={handleClickMenuMobile}>
             <img
               src="/img_mobile/icon_menu_mobi.png"
               width={24}
               height={24}
+              alt=""
             />
           </div>
           <Link
@@ -40,23 +63,99 @@ const HeaderMobi = () => {
             style={{ cursor: "pointer", display: "flex" }}
             href="/"
           >
-            <img
-              src="/img_mobile/okvip-logo-mobi.png"
-              width={125}
-              height={30}
-              style={{ objectFit: "contain" }}
-            />
+            {scrollY > 100 ? (
+              <img
+                src="/img_mobile/okvip-logo-mobi.png"
+                width={125}
+                height={30}
+                style={{ objectFit: "contain" }}
+                alt=""
+              />
+            ) : (
+              <img
+                src="/img_mobile/logo_reve.png"
+                width={125}
+                height={30}
+                style={{ objectFit: "contain" }}
+                alt=""
+              />
+            )}
           </Link>
           <div className="profile-mobile">
             <img
               src="/img_mobile/icon_profile_mobi.png"
               width={24}
               height={24}
+              alt=""
             />
           </div>
         </div>
+        {navMenu === true ? (
+          <div className="nav-menu-mobile">
+            <div className="list-nav-menu w-100 h-100">
+              <ul className="nav-mobile">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="/img_mobile/icon_menu_header/icon_giftbox_mobi.png"
+                      width="20"
+                      height="20"
+                      className="me-2"
+                    />
+                    KHUYẾN MÃI
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="/img_mobile/icon_menu_header/icon_vector_mobi.png"
+                      width="20"
+                      height="20"
+                      className="me-2"
+                    />
+                    GAME HOT
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#" role="button">
+                    <img
+                      src="/img_mobile/icon_menu_header/icon_member_mobi.png"
+                      width="20"
+                      height="20"
+                      className="me-2"
+                    />
+                    THÀNH VIÊN
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">
+                    <img
+                      src="/img_mobile/icon_menu_header/icon_news_mobi.png"
+                      width="20"
+                      height="20"
+                      className="me-2"
+                    />
+                    KÊNH TIN KHÁC
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">
+                    <img
+                      src="/img_mobile/icon_menu_header/icon_report_mobi.png"
+                      width="20"
+                      height="20"
+                      className="me-2"
+                    />
+                    ĐÓNG GÓP Ý KIẾN
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </nav>
-      
     </div>
   );
 };
