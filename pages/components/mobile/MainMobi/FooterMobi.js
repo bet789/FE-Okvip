@@ -153,10 +153,12 @@ const FooterMobi = () => {
           </div>
         </div>
         <div className="footer-content-detail">
-          <Image
-            src={"/img_mobile/okvip-logo-mobi.png"}
-            width={"100"}
-            height={"50"}
+          <img
+            src="/img_mobile/okvip-logo-mobi.png"
+            width="125"
+            height="30"
+            style={{ objectFit: "contain" }}
+            alt=""
           />
           <p className="footer-content-text">
             Về Okvip.com Okvip.com là diễn đàn chuyên tổng hợp các thông tin,

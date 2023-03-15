@@ -25,6 +25,9 @@ const HeaderMobi = () => {
   const handleClickMenuMobile = () => {
     setNavMenu(!navMenu);
   };
+  const handleOutSideMenu = (e) => {
+    setNavMenu(false);
+  };
   return (
     <div>
       <Head>
@@ -91,65 +94,72 @@ const HeaderMobi = () => {
           </div>
         </div>
         {navMenu === true ? (
-          <div className="nav-menu-mobile">
-            <div className="list-nav-menu w-100 h-100">
-              <ul className="nav-mobile">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">
-                    <img
-                      src="/img_mobile/icon_menu_header/icon_giftbox_mobi.png"
-                      width="20"
-                      height="20"
-                      className="me-2"
-                    />
-                    KHUYẾN MÃI
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img
-                      src="/img_mobile/icon_menu_header/icon_vector_mobi.png"
-                      width="20"
-                      height="20"
-                      className="me-2"
-                    />
-                    GAME HOT
-                  </a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#" role="button">
-                    <img
-                      src="/img_mobile/icon_menu_header/icon_member_mobi.png"
-                      width="20"
-                      height="20"
-                      className="me-2"
-                    />
-                    THÀNH VIÊN
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">
-                    <img
-                      src="/img_mobile/icon_menu_header/icon_news_mobi.png"
-                      width="20"
-                      height="20"
-                      className="me-2"
-                    />
-                    KÊNH TIN KHÁC
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">
-                    <img
-                      src="/img_mobile/icon_menu_header/icon_report_mobi.png"
-                      width="20"
-                      height="20"
-                      className="me-2"
-                    />
-                    ĐÓNG GÓP Ý KIẾN
-                  </a>
-                </li>
-              </ul>
+          <div className="menu-mobile p-0" onClick={handleOutSideMenu}>
+            <div className="nav-menu-mobile">
+              <div className="list-nav-menu w-100 h-100">
+                <ul className="nav-mobile">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_giftbox_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      KHUYẾN MÃI
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_vector_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      GAME HOT
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#" role="button">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_member_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      THÀNH VIÊN
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_news_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      KÊNH TIN KHÁC
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_report_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      ĐÓNG GÓP Ý KIẾN
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         ) : (

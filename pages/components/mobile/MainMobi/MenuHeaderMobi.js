@@ -8,6 +8,7 @@ const MenuHeaderMobi = () => {
           src="/img_mobile/icon_menu_header/icon_giftbox_mobi.png"
           width={35}
           height={35}
+          style={{ objectFit: "contain" }}
         />
         <p className="text-menu-header">KHUYẾN MÃI</p>
       </div>
@@ -16,6 +17,7 @@ const MenuHeaderMobi = () => {
           src="/img_mobile/icon_menu_header/icon_vector_mobi.png"
           width={35}
           height={35}
+          style={{ objectFit: "contain" }}
         />
         <p className="text-menu-header">GAME HOT</p>
       </div>
@@ -24,6 +26,7 @@ const MenuHeaderMobi = () => {
           src="/img_mobile/icon_menu_header/icon_member_mobi.png"
           width={35}
           height={35}
+          style={{ objectFit: "contain" }}
         />
         <p className="text-menu-header">THÀNH VIÊN</p>
       </div>
@@ -32,6 +35,7 @@ const MenuHeaderMobi = () => {
           src="/img_mobile/icon_menu_header/icon_news_mobi.png"
           width={35}
           height={35}
+          style={{ objectFit: "contain" }}
         />
         <p className="text-menu-header">KÊNH TIN KHÁC</p>
       </div>
@@ -40,6 +44,7 @@ const MenuHeaderMobi = () => {
           src="/img_mobile/icon_menu_header/icon_report_mobi.png"
           width={35}
           height={35}
+          style={{ objectFit: "contain" }}
         />
         <p className="text-menu-header">ĐÓNG GÓP Ý KIẾN</p>
       </div>
