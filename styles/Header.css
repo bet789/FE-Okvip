@@ -417,9 +417,25 @@
 
 
     .slide-mobi {
-        padding: 15px 50px;
+        padding: 35px 15px;
+        background-color: #80808038;
+        margin-bottom: 10px;
     }
-
+    .swiper-pagination{
+        position: static !important;
+    }
+    .slide-mobi .swiper-3d .swiper-wrapper{
+        width: 80%;
+    }
+    .swiper-pagination-bullet-active{
+        background: orange !important;
+        width: 25px !important;
+        height: 10px !important;
+        border-radius: 8px !important;
+    }
+    .swiper-pagination-bullet{
+        opacity: 1 !important;
+    }
     .swiper {
         width: 80%;
         height: 70%;
