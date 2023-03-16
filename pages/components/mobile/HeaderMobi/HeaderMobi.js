@@ -68,17 +68,17 @@ const HeaderMobi = () => {
           >
             {scrollY > 100 ? (
               <img
-                src="/img_mobile/okvip-logo-mobi.png"
-                width={125}
-                height={30}
+                src="/img_mobile/logo_reve.png"
+                width={140}
+                height={40}
                 style={{ objectFit: "contain" }}
                 alt=""
               />
             ) : (
               <img
-                src="/img_mobile/logo_reve.png"
-                width={125}
-                height={30}
+                src="/img_mobile/okvip-logo-mobi.png"
+                width={140}
+                height={40}
                 style={{ objectFit: "contain" }}
                 alt=""
               />

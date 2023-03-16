@@ -1,6 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 const FooterMobi = () => {
   return (
     <div>
@@ -21,8 +27,8 @@ const FooterMobi = () => {
           </div>
         </div>
 
-        <div className="slide-companies">
-          <div className="next-left">
+        <div className="slide-companies pb-4">
+          {/* <div className="next-left">
             <img src="/img_mobile/next_left.png" className="next-icon" />
           </div>
           <div className="detail-icon">
@@ -101,7 +107,81 @@ const FooterMobi = () => {
           </div>
           <div className="next-right">
             <img src="/img_mobile/next_right.png" className="next-icon" />
-          </div>
+          </div> */}
+          <Swiper
+            slidesPerView={2}
+            autoplay={{
+              delay: 2500,
+            }}
+            navigation={true}
+            modules={[Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/gg.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/fb.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/fifa.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/tiktok.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/twit.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/twt.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/vimeo.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/ytb.png"
+                className="img-detail-icon"
+                style={{ objectFit: "contain" }}
+                width="100"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
       <div className="contact">
@@ -152,14 +232,16 @@ const FooterMobi = () => {
             <img src="/img_mobile/ceza.png" className="content-ceza-icon" />
           </div>
         </div>
-        <div className="footer-content-detail">
+        <div className="text-start">
           <img
             src="/img_mobile/okvip-logo-mobi.png"
-            width="125"
-            height="30"
+            width="140"
+            height="40"
             style={{ objectFit: "contain" }}
             alt=""
           />
+        </div>
+        <div className="footer-content-detail">
           <p className="footer-content-text">
             Về Okvip.com Okvip.com là diễn đàn chuyên tổng hợp các thông tin,
             đánh giá những nhà cái trực tuyến hot nhất thị trường. Phương châm

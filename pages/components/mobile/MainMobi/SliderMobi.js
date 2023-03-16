@@ -1,9 +1,12 @@
 import React from "react";
-import SwiperCore, { EffectCards, EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-
+import "swiper/css/effect-coverflow";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const slide_img = [
@@ -17,37 +20,17 @@ const slide_img = [
 const SliderMobi = () => {
   return (
     <div className="slide-mobi">
-      {/* <Swiper
-        effect={"cards"}
-        grabCursor={true}
-        centeredSlides={true}
-        modules={[EffectCards]}
-        className="mySwiper"
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-      >
-        {slide_img.map((img, i) => {
-          return (
-            <SwiperSlide key={i}>
-              <img src={img} alt="" />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper> */}
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+        loop={true}
         coverflowEffect={{
-          rotate: 30,
-          stretch: 160,
-          depth: 575,
-          modifier: 1,
-          slideShadows: true,
-          scale: 1.25,
+          rotate: 0,
+          stretch: 115,
+          depth: 100,
+          modifier: 2.5,
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
@@ -55,7 +38,7 @@ const SliderMobi = () => {
           delay: 2000,
           disableOnInteraction: false,
         }}
-        className="mySwiper"
+        className="slider-mobile"
       >
         {slide_img.map((img, i) => {
           return (

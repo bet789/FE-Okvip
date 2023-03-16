@@ -68,9 +68,11 @@
     }
 
     .mobi-banner.sticky {
-        background-color: #ffffff;
+        background-color: #181818;
     }
-
+    .mobi-banner.sticky .menu-mobile img, .mobi-banner.sticky .profile-mobile img{
+        filter:  invert(100%);
+    }
     .logo-mobile {
         display: flex;
         align-items: center;
@@ -98,7 +100,7 @@
         filter: brightness(0.5);
     }
     .menu-mobile {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .menu-mobile img {
@@ -106,7 +108,7 @@
     }
 
     .profile-mobile {
-        padding-right: 10px;
+        padding-right: 20px;
     }
 
     .img-banner-mobi {
@@ -117,8 +119,11 @@
     .login-register-mobi {
         display: flex;
         height: 55px;
+        font-family: 'Roboto', sans-serif;
     }
-
+    .login-register-mobi div:nth-child(2) {
+        background-color: rgba(128, 128, 128, 0.315);
+    }
     .text-login-register {
         width: 50%;
         text-align: center;
@@ -160,7 +165,7 @@
     }
 
     .input {
-        padding: 0px 45px;
+        padding: 0px 20px;
     }
 
     .input-item {
@@ -333,14 +338,15 @@
         border-right: 1px solid #FF9900;
     }
 
-    .img-detail-icon {
-        width: 100%;
-    }
-
     .line-footer {
         border-bottom: 4px solid #D0D0D0;
     }
-
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        font-size: 14px !important;
+        font-weight: bold;
+        color: orange;
+    }
     .footer-content {
         text-align: center;
     }
@@ -378,6 +384,7 @@
         letter-spacing: 0.055em;
         color: #1F1F1F;
         padding-bottom: 75px;
+        font-family: 'Roboto', sans-serif;
     }
 
     .menu-mobi {
@@ -417,20 +424,35 @@
 
 
     .slide-mobi {
-        padding: 35px 15px;
+        padding: 20px 15px;
         background-color: #80808038;
         margin-bottom: 10px;
     }
+    .slider-mobile  .swiper-wrapper .swiper-slide img{
+        width: 250px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+    }
+    .slider-mobile .swiper-wrapper .swiper-slide .swiper-slide-shadow-right {
+        border-radius: 10px;
+    }
+    .slider-mobile .swiper-wrapper .swiper-slide .swiper-slide-shadow-left {
+        border-radius: 10px;
+    }
     .swiper-pagination{
         position: static !important;
+    }
+    .swiper-pagination-bullet{
+        width: 4px !important;
+        height: 4px !important;
     }
     .slide-mobi .swiper-3d .swiper-wrapper{
         width: 80%;
     }
     .swiper-pagination-bullet-active{
         background: orange !important;
-        width: 25px !important;
-        height: 10px !important;
+        width: 15px !important;
+        height: 5px !important;
         border-radius: 8px !important;
     }
     .swiper-pagination-bullet{
