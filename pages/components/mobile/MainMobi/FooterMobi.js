@@ -122,7 +122,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/gg.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -130,7 +130,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/fb.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -138,7 +138,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/fifa.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -146,7 +146,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/tiktok.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -154,7 +154,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/twit.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -162,7 +162,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/twt.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -170,7 +170,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/vimeo.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -178,7 +178,7 @@ const FooterMobi = () => {
                 src="/img_mobile/icon_companies/ytb.png"
                 className="img-detail-icon"
                 style={{ objectFit: "contain" }}
-                width="100"
+                width="140"
               />
             </SwiperSlide>
           </Swiper>
