@@ -136,12 +136,12 @@
     }
 
     .text-login-register {
+        font-family: UTM_AVO;
         width: 50%;
         font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: 300;
     }
 
     .menu-header {
@@ -175,8 +175,8 @@
     }
 
     .text-title {
-        font-weight: 600;
-        font-size: 17px;
+        font-family: UTM_AVO_BOLD !important;
+        font-size: 18px;
         margin-top: 15px;
     }
 
@@ -189,18 +189,16 @@
     }
 
     .title-input {
-        font-weight: 700;
-        font-size: 12px;
-        letter-spacing: 0.03em;
+        font-family: UTM_AVO_BOLD !important;
+        font-size: 14px;
         text-transform: uppercase;
         margin-bottom: 0px;
     }
 
     .title-input-text {
-        font-weight: 400;
-        font-size: 16px;
-        letter-spacing: 0.03em;
-        color: #989898;
+        font-family: UTM_AVO !important;
+        font-size: 14px;
+        color: #000000;
         width: 100%;
         background-color: #ffffff00;
         border: none;
@@ -212,7 +210,8 @@
     }
 
     .des p {
-        font-size: 14px;
+        font-family: UTM_AVO;
+        font-size: 13px;
         padding: 20px;
         padding-bottom: 0;
         margin: 0;
@@ -233,7 +232,7 @@
         background-color: #020202;
         border-radius: 5px;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         text-transform: uppercase;
         color: #fff;
     }
@@ -255,19 +254,17 @@
         text-align: center;
     }
 
-    .title-top-head {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 38px;
-        letter-spacing: 0.02em;
+    .title-top-head p {
+        font-family: UTM_AVO_BOLD !important;
+        font-size: 18px;
+        margin: 0;
     }
 
     .text-top-head {
         margin: 0;
         margin-top: 10px;
         font-weight: 600;
-        font-size: 17px;
+        font-size: 16px;
         text-align: center;
         color: #ffffff;
         text-shadow: 1px 1px 1px #000000, 1px 1px 1px #000000;
@@ -322,8 +319,7 @@
     }
 
     .text-companies-title {
-        font-style: normal;
-        font-weight: 700;
+        font-family: UTM_AVO_BOLD;
         font-size: 16px;
         line-height: 44px;
         align-items: center;
@@ -344,6 +340,7 @@
     .text-detail p {
         line-height: 20px;
         margin: 0;
+        font-family: UTM_AVO !important;
     }
 
     .text-detail p:nth-child(2) {
@@ -363,13 +360,13 @@
 
     .slide-companies .swiper-button-prev {
         position: absolute;
-        left: 0;
+        left: 20;
         z-index: 9999;
     }
 
     .slide-companies .swiper-button-next {
         position: absolute;
-        right: 0;
+        right: 20;
         z-index: 9999;
 
     }
@@ -488,10 +485,11 @@
     }
 
     .footer-content-text {
-        font-size: 14px;
-        text-align: justify;
+        font-size: 13px;
+        text-align: left;
         color: #1F1F1F;
         padding-bottom: 75px;
+        font-family: UTM_AVO !important;
     }
 
     .menu-mobi {

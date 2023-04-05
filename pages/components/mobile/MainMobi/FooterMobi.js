@@ -298,14 +298,18 @@ export default function FooterMobi() {
         </div>
         <div className="footer-content-detail">
           <ReadMore>
-            Về Okvip.com Okvip.com là diễn đàn chuyên tổng hợp các thông tin,
-            đánh giá những nhà cái trực tuyến hot nhất thị trường. Phương châm
-            hoạt động của Okvip.com chính là đưa ra những đánh giá khách quan,
-            trung thực nhất để các bet thủ có thể đưa ra lựa chọn sáng suốt
-            nhất. Okvip.com được thành lập từ năm 2010, suốt 13 năm qua, chúng
-            tôi đã phục vụ hàng tỷ độc giả nhờ sự công tâm của mình. Không chỉ
-            dựa trên số liệu, Okvip.com còn thu thập đánh giá của các chuyên gia
-            và người chơi để đưa ra cái nhìn chính xác nhất.
+            Liên minh OKVIP cam kết cung cấp các tiêu chuẩn cao nhất về bảo mật
+            và dịch vụ khách hàng đáng tin cậy cho mọi người tham gia chơi
+            GAMEONLINE. Các thành viên của chúng tôi có kinh nghiệm đầu ngành và
+            các dịch vụ chuyên nghiệp hơn, đồng thời là lựa chọn hàng đầu của
+            hàng chục triệu người dùng trên khắp thế giới. Thành viên của chúng
+            tôi bao gồm những người chia bài với các chủ đề khác nhau, bạn có
+            thể tìm thấy những trò chơi mà mình hài lòng tại đây. Các thành viên
+            khác nhau duy trì tính độc đáo và kinh nghiệm của riêng họ, mang lại
+            sự đa dạng cho liên minh. Đồng thời, tất cả các thành viên đều có
+            một cam kết chung, đó là cung cấp tiêu chuẩn cao nhất về bảo mật và
+            dịch vụ khách hàng đáng tin cậy cho mọi người chơi ONLINEGAME trong
+            liên minh...
           </ReadMore>
         </div>
       </div>
