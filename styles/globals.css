@@ -69,18 +69,18 @@
 
 @font-face {
   font-family: UTM_AVO;
-  src: url(../assets/fonts/UTM\ Avo.ttf);
+  src: url(../assets/fonts/UTM_Avo.ttf);
 }
 
 @font-face {
   font-family: UTM_AVO_BOLD;
-  src: url(../assets/fonts/UTM\ AvoBold.ttf);
+  src: url(../assets/fonts/UTM_AvoBold.ttf);
 }
 
 
 @font-face {
   font-family: UTM_HELVETLNS;
-  src: url(../assets/fonts/UTM\ HelvetIns.ttf);
+  src: url(../assets/fonts/UTM_HelvetIns.ttf);
 }
 
 html,
