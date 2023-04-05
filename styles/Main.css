@@ -1,7 +1,8 @@
-.main .best-withdraw .one-company{
+.main .best-withdraw .one-company {
     position: relative;
 }
-.main .best-withdraw .one-company span{
+
+.main .best-withdraw .one-company span {
     width: 19px;
     height: 19px;
     position: absolute;
@@ -18,15 +19,107 @@
     z-index: 9;
 }
 
+.bannerMobi {
+    position: relative;
+}
+
+.textBanner {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+.textBanner p {
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3.60091px 3.60091px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bgBrand {
+    width: 100%;
+}
+
+.bgBrand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.textBanner p:nth-child(2) {
+    margin-top: 5px;
+}
+
+.box-top-head {
+    padding: 0 10px 10px;
+}
+
+.top-head-item {
+    background-image: url(/img_mobile/bg_brand/bet789.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.496) 0px 0px 0px 1px;
+}
+
+.box-top-head .top-head-item:nth-child(2) {
+    background-image: url(/img_mobile/bg_brand/new88.png);
+    background-position: center center;
+}
+
+.box-top-head .top-head-item:nth-child(3) {
+    background-image: url(/img_mobile/bg_brand/hi88.png);
+    background-position: center center;
+}
+
+.box-top-head .top-head-item:nth-child(4) {
+    background-image: url(/img_mobile/bg_brand/shbet.png);
+    background-position: center center;
+}
+
+.box-top-head .top-head-item:nth-child(5) {
+    background-image: url(/img_mobile/bg_brand/jun88.png);
+    background-position: center center;
+}
+
+.box-top-head .top-head-item:nth-child(6) {
+    background-image: url(/img_mobile/bg_brand/f8bet.png);
+    background-position: center center;
+}
+
+.itemContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(0deg, #000000 0%, rgba(101, 63, 7, 0) 100%), linear-gradient(0deg, #ffbc0047 0%, rgba(101, 63, 7, 0) 100%);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.read-or-hide {
+    font-style: italic;
+}
+
 @media screen and (max-width: 440px) {
-    .main .top-head{
+    .main .top-head {
         font-size: 12px;
     }
-    .best-withdraw .col-2{
+
+    .best-withdraw .col-2 {
         width: 50%;
         font-size: 12px;
     }
-    .form-certificate label{
+
+    .form-certificate label {
         width: 100% !important;
         text-align: start;
     }

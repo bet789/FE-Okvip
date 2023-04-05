@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -7,7 +7,24 @@ import "swiper/css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-const FooterMobi = () => {
+
+const ReadMore = ({ children }) => {
+  const text = children;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  return (
+    <p className="footer-content-text">
+      {isReadMore ? text.slice(0, 150) : text}
+      <span onClick={toggleReadMore} className="read-or-hide">
+        {isReadMore ? "... Xem thêm" : " Thu gọn"}
+      </span>
+    </p>
+  );
+};
+
+export default function FooterMobi() {
   return (
     <div>
       <div className="companies">
@@ -28,194 +45,232 @@ const FooterMobi = () => {
         </div>
 
         <div className="slide-companies pb-4">
-          {/* <div className="next-left">
-            <img src="/img_mobile/next_left.png" className="next-icon" />
-          </div>
-          <div className="detail-icon">
-            <div className="detail-icon-item">
-              <div className="boder-icon">
-                <div className="icon-top">
-                  <img
-                    src="/img_mobile/icon_companies/google.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-              <div className="boder-icon">
-                <div className="icon-bottom">
-                  <img
-                    src="/img_mobile/icon_companies/youtube.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="detail-icon-item">
-              <div className="boder-icon">
-                <div className="icon-top">
-                  <img
-                    src="/img_mobile/icon_companies/facebook.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-              <div className="boder-icon">
-                <div className="icon-bottom">
-                  <img
-                    src="/img_mobile/icon_companies/twitch.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="detail-icon-item">
-              <div className="boder-icon">
-                <div className="icon-top">
-                  <img
-                    src="/img_mobile/icon_companies/twitter.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-              <div className="boder-icon">
-                <div className="icon-bottom">
-                  <img
-                    src="/img_mobile/icon_companies/vimeo.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="detail-icon-item">
-              <div className="boder-icon">
-                <div className="icon-top">
-                  <img
-                    src="/img_mobile/icon_companies/tiktok.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-              <div className="boder-icon">
-                <div className="icon-bottom">
-                  <img
-                    src="/img_mobile/icon_companies/fifa.png"
-                    className="img-detail-icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="next-right">
-            <img src="/img_mobile/next_right.png" className="next-icon" />
-          </div> */}
           <Swiper
-            slidesPerView={2}
+            modules={[Autoplay, Navigation]}
+            slidesPerView={3}
+            spaceBetween={50}
+            loop={true}
             autoplay={{
               delay: 2500,
             }}
             navigation={true}
-            modules={[Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide>
               <img
-                src="/img_mobile/icon_companies/gg.png"
+                src="/img_mobile/icon_companies/twit.png"
                 className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/fb.png"
-                className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/fifa.png"
-                className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/img_mobile/icon_companies/tiktok.png"
                 className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/img_mobile/icon_companies/twit.png"
+                src="/img_mobile/icon_companies/hd.png"
                 className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/twt.png"
-                className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/vimeo.png"
-                className="img-detail-icon"
-                style={{ objectFit: "contain" }}
-                width="140"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/img_mobile/icon_companies/ytb.png"
                 className="img-detail-icon"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/gg.png"
                 style={{ objectFit: "contain" }}
-                width="140"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/szk.png"
+                className="img-detail-icon"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/fb.png"
+                className="img-detail-icon"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/ymh.png"
+                className="img-detail-icon"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/tyt.png"
+                className="img-detail-icon"
               />
             </SwiperSlide>
           </Swiper>
         </div>
       </div>
       <div className="contact">
-        <div className="title">
-          <p className="text-contact-title">LIÊN HỆ VỀ CHÚNG TÔI</p>
-        </div>
         <div className="icon-contact">
           <div className="icon-contact-item">
-            <img
-              src="/img_mobile/icon_contact/facebook.png"
-              className="img-contact-mobi"
-            />
+            <svg
+              width="19"
+              height="37"
+              viewBox="0 0 19 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.5689 9.28361V14.11H0V20.4214H5.5689V36.3856H12.4991V20.5452H17.6967L18.6868 14.2337H12.6228V10.1499C12.6228 8.41734 13.4891 6.68479 16.2117 6.68479H18.9343V1.11589C18.9343 1.11589 16.4592 0.744629 13.9841 0.744629C8.91024 0.744629 5.5689 3.71471 5.5689 9.28361Z"
+                fill="black"
+              />
+            </svg>
           </div>
           <div className="icon-contact-item">
-            <img
-              src="/img_mobile/icon_contact/Zalo.png"
-              className="img-contact-mobi"
-            />
+            <svg
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27.6672 7.37695C26.4668 7.37695 25.6094 8.21818 25.6094 9.39591C25.6094 10.5736 26.4668 11.4149 27.6672 11.4149C28.8675 11.4149 29.725 10.5736 29.725 9.39591C29.725 8.21818 28.6961 7.37695 27.6672 7.37695Z"
+                fill="black"
+              />
+              <path
+                d="M18.2356 9.90039C13.4341 9.90039 9.48999 13.7701 9.48999 18.481C9.48999 23.1919 13.4341 27.0616 18.2356 27.0616C23.0371 27.0616 26.9812 23.1919 26.9812 18.481C27.1527 13.7701 23.2086 9.90039 18.2356 9.90039ZM18.2356 24.2014C15.1489 24.2014 12.5767 21.6777 12.5767 18.6492C12.5767 15.6208 15.1489 13.0971 18.2356 13.0971C21.3223 13.0971 23.8945 15.6208 23.8945 18.6492C23.8945 21.6777 21.3223 24.2014 18.2356 24.2014Z"
+                fill="black"
+              />
+              <path
+                d="M25.2664 36.147H11.0334C5.03149 36.147 0.22998 31.4361 0.22998 25.5475V11.583C0.22998 5.69432 5.03149 0.983398 11.0334 0.983398H25.2664C31.2683 0.983398 36.0698 5.69432 36.0698 11.583V25.5475C36.0698 31.4361 31.2683 36.147 25.2664 36.147ZM11.0334 4.34834C6.9178 4.34834 3.65963 7.54504 3.65963 11.583V25.5475C3.65963 29.5854 6.9178 32.7821 11.0334 32.7821H25.2664C29.382 32.7821 32.6402 29.5854 32.6402 25.5475V11.583C32.6402 7.54504 29.382 4.34834 25.2664 4.34834H11.0334Z"
+                fill="black"
+              />
+            </svg>
           </div>
           <div className="icon-contact-item">
-            <img
-              src="/img_mobile/icon_contact/Telegram.png"
-              className="img-contact-mobi"
-            />
+            <svg
+              width="41"
+              height="35"
+              viewBox="0 0 41 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M39.6459 4.89132C38.412 5.50604 36.9724 5.71095 35.5328 6.12077C36.1498 5.91586 37.1781 4.89131 37.5894 4.27658C38.2064 3.45695 38.6177 2.63732 39.029 1.81768V1.61276H38.8233C37.3837 2.4324 35.7385 3.04713 34.0932 3.45695C33.8876 3.45695 33.8876 3.45695 33.6819 3.45695C33.4763 3.25204 33.4763 3.25204 33.2706 3.04713C32.6537 2.43241 31.831 2.02258 31.0084 1.61276C29.9801 1.20295 28.7462 0.998047 27.5123 0.998047C26.2783 0.998047 25.2501 1.40786 24.2218 2.02259C23.1935 2.63732 22.1652 3.25204 21.5483 4.27658C20.7256 5.30113 20.3143 6.32567 19.903 7.55512C19.6973 8.78457 19.6973 9.80912 19.903 11.0386C19.903 11.2435 19.903 11.2435 19.6974 11.2435C13.1164 10.2189 7.56367 7.96495 3.2449 2.84223C3.03924 2.63732 3.03925 2.63732 2.83359 2.84223C0.982689 5.71095 1.80531 10.4238 4.27318 12.6778C4.68449 12.8827 4.89015 13.2926 5.30146 13.4975C5.0958 13.4975 3.65621 13.2926 2.21662 12.6778C2.01097 12.4729 2.01097 12.6778 2.01097 12.8827C2.01097 13.2926 2.01097 13.4975 2.01097 13.9073C2.42228 16.776 4.47884 19.6447 7.15236 20.6693C7.56367 20.8742 7.76933 20.8742 8.18064 21.0791C7.56367 21.284 6.9467 21.284 5.0958 21.0791C4.89015 21.0791 4.68449 21.0791 4.89015 21.284C6.32974 24.9724 9.20891 26.2018 11.4711 26.8165C11.6768 26.8165 12.0881 26.8166 12.2937 27.0215C11.4711 28.046 9.00326 29.0705 7.76932 29.4804C5.71277 30.3 3.2449 30.5049 0.98269 30.3C0.571379 30.3 0.571378 30.3 0.365723 30.3C0.365723 30.3 0.365721 30.5049 0.571377 30.5049C0.982688 30.7098 1.59966 31.1196 2.01097 31.3245C3.45056 32.1442 4.89015 32.7589 6.53539 33.1687C14.7616 35.4227 23.8105 33.7834 29.9801 27.6362C34.7102 22.9233 36.5611 16.3662 36.5611 9.80911C36.5611 9.6042 36.7668 9.3993 36.9724 9.1944C38.2064 8.16985 39.2346 7.14531 40.2629 5.91586C39.8516 5.30113 39.8516 5.09622 39.6459 4.89132C39.8516 5.09622 39.8516 4.89132 39.6459 4.89132C39.8516 4.89132 39.8516 4.89132 39.6459 4.89132Z"
+                fill="black"
+              />
+            </svg>
           </div>
           <div className="icon-contact-item">
-            <img
-              src="/img_mobile/icon_contact/email.png"
-              className="img-contact-mobi"
-            />
+            <svg
+              width="31"
+              height="37"
+              viewBox="0 0 31 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3715 0.748056C12.491 0.0279987 6.13048 2.30818 2.65021 7.70861C-0.470042 12.629 0.250015 18.3894 2.5302 21.2697C3.25025 22.1097 4.09032 22.8298 5.0504 23.1898C5.53043 23.4299 6.01047 23.1898 6.13048 22.7098C6.3705 21.9897 6.49051 21.2697 6.61052 20.6696C6.73053 20.1896 6.49051 19.9496 6.13048 19.4695C3.37026 15.9893 4.81038 8.42867 10.9309 5.54844C16.3313 3.02824 24.732 4.70837 25.212 12.389C25.452 16.2293 24.2519 21.6297 21.1317 23.9099C17.7714 26.4301 13.8111 24.0299 14.6512 20.5496C15.7312 16.4693 17.0513 13.7091 16.4513 11.5489C15.6112 8.18865 10.9309 8.42866 9.61076 12.629C9.01071 14.5491 9.13072 16.4693 9.85078 18.2694C9.97079 18.3894 9.97079 18.6295 9.97079 18.7495C7.09056 30.8704 6.85054 32.7906 6.73053 35.0708C6.73053 35.5508 6.73053 36.0309 6.73053 36.5109H10.2108C11.5309 33.9907 11.7709 31.5905 13.091 26.1901C13.091 26.0701 13.091 25.9501 13.211 25.83C13.4511 26.0701 13.5711 26.4301 13.8111 26.6701C16.8113 29.6703 23.2918 29.4303 27.2522 24.3899C30.7324 20.0696 30.9725 14.0691 30.6124 11.5489C29.7724 6.3885 25.332 1.58812 18.3715 0.748056Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div className="icon-contact-item">
+            <svg
+              width="30"
+              height="36"
+              viewBox="0 0 30 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.6139 14.4179C29.2992 14.4179 28.9845 14.4179 28.8272 14.4179C25.6801 14.4179 22.6903 12.8444 21.1168 10.1694V24.4886C21.1168 30.3108 16.3961 35.0314 10.574 35.0314C4.75189 35.0314 0.03125 30.3108 0.03125 24.4886C0.03125 18.6665 4.75189 13.9459 10.574 13.9459C10.7314 13.9459 11.0461 13.9459 11.2034 13.9459V19.1386C11.0461 19.1386 10.7314 19.1386 10.574 19.1386C7.58428 19.1386 5.22396 21.4989 5.22396 24.4886C5.22396 27.4784 7.58428 29.8387 10.574 29.8387C13.5638 29.8387 16.2388 27.4784 16.2388 24.4886V0.0986328H21.2741C21.7462 4.50457 25.3654 8.12373 29.7713 8.43844L29.6139 14.4179Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div className="icon-contact-item">
+            <svg
+              width="34"
+              height="35"
+              viewBox="0 0 34 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.0668945 34.3421L2.51014 25.3835C1.20708 22.9402 0.392662 20.1712 0.392662 17.4022C0.392662 8.28074 7.88529 0.788086 17.0068 0.788086C26.1282 0.788086 33.6209 8.28074 33.6209 17.4022C33.6209 26.5237 26.1282 34.0163 17.0068 34.0163C14.2377 34.0163 11.4687 33.3648 9.02548 32.0617L0.0668945 34.3421ZM9.67701 28.4783L10.3285 28.804C12.446 30.1071 14.8893 30.7587 17.1696 30.7587C24.6623 30.7587 30.689 24.7319 30.689 17.2393C30.689 9.74668 24.6623 3.72002 17.1696 3.72002C9.67701 3.72002 3.65033 9.74668 3.65033 17.2393C3.65033 19.6826 4.30186 22.1258 5.60493 24.2433L5.9307 24.8949L4.62763 29.9442L9.67701 28.4783Z"
+                fill="black"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.1963 19.5196C22.5448 19.031 21.5675 18.7052 20.7531 19.031C20.1015 19.3568 19.7758 20.3341 19.2871 20.8227C19.1242 21.1485 18.7985 21.1485 18.4727 20.9856C16.1923 20.0083 14.4006 18.5423 13.0976 16.4249C12.9347 16.0991 12.9347 15.7733 13.2604 15.4475C13.5862 14.9589 14.0749 14.4702 14.2377 13.8187C14.4006 13.1672 14.0749 12.5157 13.7491 11.8641C13.4233 11.2126 13.0976 10.2353 12.2831 9.74663C11.6316 9.42086 10.8172 9.58376 10.1657 10.0724C9.18836 10.8868 8.69971 12.1899 8.69971 13.3301C8.69971 13.6558 8.69971 13.9816 8.86259 14.3074C9.02547 15.1218 9.51412 15.9362 9.83989 16.5877C10.1657 17.0764 10.4914 17.7279 10.8172 18.2166C12.1203 19.8454 13.5862 21.3114 15.3779 22.4516C16.3552 22.9402 17.1696 23.4288 18.3098 23.7546C19.45 24.0804 20.4273 24.5691 21.5675 24.2433C22.8706 24.0804 24.0107 23.2659 24.6623 21.9629C24.8252 21.6371 24.8252 21.1485 24.8252 20.8227C24.988 20.497 23.8479 20.0083 23.1963 19.5196Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div className="icon-contact-item">
+            <svg
+              width="42"
+              height="29"
+              viewBox="0 0 42 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41.5592 9.25025C41.5592 4.24813 37.5992 0.288086 32.5971 0.288086H9.87912C4.877 0.288086 0.916992 4.24813 0.916992 9.25025V19.8797C0.916992 24.8818 4.877 28.8419 9.87912 28.8419H32.5971C37.5992 28.8419 41.5592 24.8818 41.5592 19.8797V9.25025ZM28.0118 15.5029L17.7991 20.505C17.3823 20.7134 16.1318 20.505 16.1318 19.8797V9.45862C16.1318 9.04178 17.5907 8.62496 18.0076 8.83338L27.8034 14.2524C28.0118 14.6692 28.4286 15.2945 28.0118 15.5029Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div className="icon-contact-item">
+            <svg
+              width="45"
+              height="37"
+              viewBox="0 0 45 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M34.0061 36.0896C34.5868 36.4982 35.3351 36.6004 36.0023 36.3495C36.6695 36.0968 37.16 35.5305 37.3078 34.8442C38.8748 27.5257 42.676 9.00185 44.1024 2.34458C44.2106 1.84283 44.0302 1.32136 43.6335 0.986253C43.2368 0.65115 42.6868 0.554382 42.1964 0.735373C34.6355 3.51655 11.3505 12.1988 1.83304 15.6985C1.22896 15.9207 0.835862 16.4978 0.855698 17.1303C0.877337 17.7647 1.3065 18.3148 1.92501 18.4994C6.19324 19.7682 11.7958 21.5333 11.7958 21.5333C11.7958 21.5333 14.4141 29.3912 15.7792 33.3873C15.9505 33.8891 16.3454 34.2833 16.8665 34.4195C17.3858 34.5539 17.9412 34.4123 18.3289 34.0486C20.5216 31.9913 23.9117 28.8106 23.9117 28.8106C23.9117 28.8106 30.3528 33.5038 34.0061 36.0896ZM14.1527 20.5405L17.1803 30.4646L17.8529 24.18C17.8529 24.18 29.5504 13.6951 36.2187 7.71878C36.4134 7.54316 36.4405 7.24927 36.2782 7.0432C36.1177 6.83712 35.822 6.78873 35.6002 6.92851C27.8716 11.8332 14.1527 20.5405 14.1527 20.5405Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div className="icon-contact-item">
+            <svg
+              width="49"
+              height="21"
+              viewBox="0 0 49 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.85297 16.0381C8.2686 16.0381 10.5234 16.0243 12.7776 16.0434C14.044 16.0541 14.7286 16.5877 14.8451 17.5749C14.992 18.8245 14.256 19.6538 12.8881 19.669C10.3079 19.6979 7.72725 19.6802 5.1466 19.6802C4.40178 19.6802 3.65526 19.7059 2.91265 19.6635C1.98665 19.6106 1.08121 19.4296 0.638293 18.4841C0.195371 17.5385 0.502894 16.6865 1.11574 15.9155C3.5818 12.8115 6.04917 9.70879 8.51785 6.60739C8.66476 6.42323 8.80603 6.23519 8.94853 6.05005C8.79795 5.78035 8.55849 5.90127 8.37241 5.90006C6.64333 5.88939 4.914 5.90151 3.18491 5.88794C2.78973 5.88479 2.3828 5.85329 2.00256 5.75466C1.20045 5.54651 0.71346 4.9109 0.707094 4.15291C0.700728 3.39493 1.1723 2.75035 1.97318 2.52693C2.35122 2.42152 2.75986 2.38493 3.1548 2.38324C6.00135 2.37193 8.8479 2.37193 11.6945 2.38324C12.1974 2.38469 12.7039 2.39753 13.1924 2.56449C14.2714 2.93331 14.7467 3.91762 14.3079 4.96033C13.9257 5.86807 13.3168 6.63962 12.7088 7.4056C10.622 10.034 8.53107 12.6591 6.43619 15.2811C6.27386 15.4853 6.11765 15.6942 5.85297 16.0381Z"
+                fill="black"
+              />
+              <path
+                d="M24.3715 7.72143C24.7604 7.23679 25.1462 6.78074 25.8036 6.64819C27.0577 6.3952 28.2469 7.20189 28.2638 8.4639C28.3054 11.6216 28.29 14.7805 28.2712 17.9387C28.266 18.8014 27.7291 19.4627 26.9436 19.7268C26.1205 20.0038 25.2628 19.8021 24.7131 19.1152C24.4438 18.7788 24.3287 18.7214 23.9541 19.0226C22.5004 20.1889 20.8607 20.3932 19.0883 19.8242C16.2442 18.9114 15.0736 16.7196 14.7651 14.0332C14.4333 11.1496 15.4039 8.67254 18.0127 7.15488C20.1786 5.89456 22.379 6.00046 24.3715 7.72143ZM18.7284 13.4967C18.7551 14.1849 18.989 14.8495 19.4 15.4052C20.4332 16.7845 22.5536 16.7802 23.5868 15.4021C24.4817 14.2077 24.4773 12.2257 23.5814 11.0328C23.1079 10.4027 22.476 10.072 21.6871 10.0259C19.936 9.9251 18.7105 11.2649 18.7284 13.4967Z"
+                fill="black"
+              />
+              <path
+                d="M35.4352 13.5855C35.3127 9.5283 38.0028 6.49709 41.8278 6.38078C45.8922 6.25719 48.8741 8.96199 48.9956 12.9053C49.118 16.8983 46.6436 19.7308 42.8255 20.1095C38.6803 20.5208 35.3757 17.5307 35.4352 13.5855ZM39.4506 13.2038C39.4464 14.0125 39.6389 14.7663 40.1313 15.4218C41.1403 16.7648 43.2388 16.7757 44.2691 15.4511C45.1978 14.2567 45.2012 12.2282 44.2848 11.0205C43.8071 10.3905 43.1722 10.0667 42.3853 10.0255C40.6599 9.93467 39.457 11.2398 39.4496 13.2038H39.4506Z"
+                fill="black"
+              />
+              <path
+                d="M34.0369 10.4433C34.0369 12.8907 34.0494 15.3382 34.032 17.7856C34.022 19.1858 32.774 20.1323 31.4318 19.7969C30.6257 19.5956 30.0229 18.7491 30.0217 17.7631C30.0157 13.5782 30.0148 9.39339 30.019 5.20866C30.019 4.47175 30.0087 3.73461 30.0217 2.99795C30.043 1.78368 30.8243 0.995162 31.9986 0.98353C33.2113 0.971656 34.0246 1.76308 34.0325 3.02073C34.0479 5.49581 34.0371 7.96991 34.0369 10.4433Z"
+                fill="black"
+              />
+            </svg>
           </div>
         </div>
       </div>
-      <div className="line-footer"></div>
 
       <div className="footer-content">
         <div className="icon-content">
@@ -242,7 +297,7 @@ const FooterMobi = () => {
           />
         </div>
         <div className="footer-content-detail">
-          <p className="footer-content-text">
+          <ReadMore>
             Về Okvip.com Okvip.com là diễn đàn chuyên tổng hợp các thông tin,
             đánh giá những nhà cái trực tuyến hot nhất thị trường. Phương châm
             hoạt động của Okvip.com chính là đưa ra những đánh giá khách quan,
@@ -251,11 +306,9 @@ const FooterMobi = () => {
             tôi đã phục vụ hàng tỷ độc giả nhờ sự công tâm của mình. Không chỉ
             dựa trên số liệu, Okvip.com còn thu thập đánh giá của các chuyên gia
             và người chơi để đưa ra cái nhìn chính xác nhất.
-          </p>
+          </ReadMore>
         </div>
       </div>
     </div>
   );
-};
-
-export default FooterMobi;
+}
