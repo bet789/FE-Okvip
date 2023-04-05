@@ -1,4 +1,18 @@
-@import url('https://fonts.cdnfonts.com/css/utm-avo');
+@font-face {
+  font-family: UTM_AVO;
+  src: url(/assets/fonts/UTM_Avo.ttf);
+}
+
+@font-face {
+  font-family: UTM_AVO_BOLD;
+  src: url(/assets/fonts/UTM_AvoBold.ttf);
+}
+
+
+@font-face {
+  font-family: UTM_HELVETLNS;
+  src: url(/assets/fonts/UTM_HelvetIns.ttf);
+}
 
 :root {
   --max-width: 1100px;
@@ -65,22 +79,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-@font-face {
-  font-family: UTM_AVO;
-  src: url(../assets/fonts/UTM_Avo.ttf);
-}
-
-@font-face {
-  font-family: UTM_AVO_BOLD;
-  src: url(../assets/fonts/UTM_AvoBold.ttf);
-}
-
-
-@font-face {
-  font-family: UTM_HELVETLNS;
-  src: url(../assets/fonts/UTM_HelvetIns.ttf);
 }
 
 html,
