@@ -308,8 +308,8 @@ export default function FooterMobi() {
             khác nhau duy trì tính độc đáo và kinh nghiệm của riêng họ, mang lại
             sự đa dạng cho liên minh. Đồng thời, tất cả các thành viên đều có
             một cam kết chung, đó là cung cấp tiêu chuẩn cao nhất về bảo mật và
-            dịch vụ khách hàng đáng tin cậy cho mọi người chơi ONLINEGAME trong
-            liên minh...
+            dịch vụ khách hàng đáng tin cậy cho mọi người chơi GAMEONLINE trong
+            liên minh.
           </ReadMore>
         </div>
       </div>
