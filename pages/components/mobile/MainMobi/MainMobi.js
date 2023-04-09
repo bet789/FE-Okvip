@@ -11,8 +11,8 @@ const MainMobi = () => {
   return (
     <div className="bg-light main">
       <BannerMobi/>
-      <LoginRegisterMobi/>
-      <MenuHeaderMobi/>
+      {/* <LoginRegisterMobi/> */}
+      {/* <MenuHeaderMobi/> */}
       <CommentMobi/>
       <SliderMobi/>
       <TopHeadMobi/>

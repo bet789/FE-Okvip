@@ -39,7 +39,7 @@ const Slider = () => {
         >
           {slider?.map((item, index) => (
             <>
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <img src={"/" + `${item.link}`} width="100%" />
               </SwiperSlide>
             </>

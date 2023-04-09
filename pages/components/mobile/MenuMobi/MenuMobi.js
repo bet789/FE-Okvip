@@ -78,13 +78,13 @@ const MenuMobi = () => {
             isCar ? 
             <>
               <img src="/img_mobile/menu_mobi/check.png" className="car-check"/>
-              <img src="/img_mobile/menu_mobi/car_active.png" className="menu-mobi-icon"/>
-              <p className="text-menu-mobi-check">NẠP - RÚT</p>
+              <img src="/img_mobile/icon_menu_header/game-hot-active.png" className="menu-mobi-icon" width="30" height="26"/>
+              <p className="text-menu-mobi-check">GAME HOT</p>
             </>
             :
             <>
-              <img src="/img_mobile/menu_mobi/car.png" className="menu-mobi-icon"/>
-              <p className="text-menu-mobi-uncheck">NẠP - RÚT</p>
+              <img src="/img_mobile/icon_menu_header/icon_vector_mobi.png" className="menu-mobi-icon" width="30" height="26" />
+              <p className="text-menu-mobi-uncheck">GAME HOT</p>
             </>
           }
         </div>
@@ -126,13 +126,13 @@ const MenuMobi = () => {
             isAccount ? 
             <>
               <img src="/img_mobile/menu_mobi/check.png" className="account-check"/>
-              <img src="/img_mobile/menu_mobi/account_active.png" className="menu-mobi-icon"/>
-              <p className="text-menu-mobi-check">TÀI KHOẢN</p>
+              <img src="/img_mobile/icon_menu_header/kenh-tin-khac-active.png" className="menu-mobi-icon"/>
+              <p className="text-menu-mobi-check">KÊNH TIN KHÁC</p>
             </>
             :
             <>
-              <img src="/img_mobile/menu_mobi/account.png" className="menu-mobi-icon"/>
-              <p className="text-menu-mobi-uncheck">TÀI KHOẢN</p>
+              <img src="/img_mobile/icon_menu_header/icon_news_mobi.png" className="menu-mobi-icon"/>
+              <p className="text-menu-mobi-uncheck">KÊNH TIN KHÁC</p>
             </>
           }
         </div>
