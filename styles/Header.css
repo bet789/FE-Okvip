@@ -515,16 +515,16 @@
     .text-menu-mobi-check {
         padding-top: 5px;
         font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
+        font-weight: 700;
+        font-size: 8px;
         color: #FF9900;
     }
 
     .text-menu-mobi-uncheck {
         padding-top: 5px;
         font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
+        font-weight: 700;
+        font-size: 8px;
         color: #fff;
     }
 
