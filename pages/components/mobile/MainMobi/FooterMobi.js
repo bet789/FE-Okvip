@@ -58,7 +58,19 @@ export default function FooterMobi() {
           >
             <SwiperSlide>
               <img
-                src="/img_mobile/icon_companies/twit.png"
+                src="/img_mobile/icon_companies/talk.png"
+                className="img-detail-icon"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/live-chat.png"
+                className="img-detail-icon"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/img_mobile/icon_companies/youtube.png"
                 className="img-detail-icon"
               />
             </SwiperSlide>
@@ -70,44 +82,8 @@ export default function FooterMobi() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/img_mobile/icon_companies/hd.png"
-                className="img-detail-icon"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/ytb.png"
-                className="img-detail-icon"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/gg.png"
+                src="/img_mobile/icon_companies/telegram.png"
                 style={{ objectFit: "contain" }}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/szk.png"
-                className="img-detail-icon"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/fb.png"
-                className="img-detail-icon"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/ymh.png"
-                className="img-detail-icon"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/img_mobile/icon_companies/tyt.png"
-                className="img-detail-icon"
               />
             </SwiperSlide>
           </Swiper>

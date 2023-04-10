@@ -62,12 +62,12 @@ const MenuMobi = () => {
             isHome ? 
             <>
               <img src="/img_mobile/menu_mobi/check.png" className="home-check"/>
-              <img src="/img_mobile/menu_mobi/home_active.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/home-active.png" className="menu-mobi-icon" width="100%"/>
               <p className="text-menu-mobi-check">TRANG CHỦ</p>
             </>
             :
             <>
-              <img src="/img_mobile/menu_mobi/home.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/home.png" className="menu-mobi-icon" width="100%"/>
               <p className="text-menu-mobi-uncheck">TRANG CHỦ</p>
             </>
           }
@@ -78,12 +78,12 @@ const MenuMobi = () => {
             isCar ? 
             <>
               <img src="/img_mobile/menu_mobi/check.png" className="car-check"/>
-              <img src="/img_mobile/icon_menu_header/game-hot-active.png" className="menu-mobi-icon" width="30" height="26"/>
+              <img src="/img_mobile/icon_menu_header/game-hot-active.png" className="menu-mobi-icon"  height="25.16" />
               <p className="text-menu-mobi-check">GAME HOT</p>
             </>
             :
             <>
-              <img src="/img_mobile/icon_menu_header/icon_vector_mobi.png" className="menu-mobi-icon" width="30" height="26" />
+              <img src="/img_mobile/icon_menu_header/game-hot.png" className="menu-mobi-icon" height="25.16"/>
               <p className="text-menu-mobi-uncheck">GAME HOT</p>
             </>
           }
@@ -94,12 +94,12 @@ const MenuMobi = () => {
             isGift ? 
             <>
               <img src="/img_mobile/menu_mobi/check.png" className="gift-check"/>
-              <img src="/img_mobile/menu_mobi/gift_active.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/promotion-active.png" className="menu-mobi-icon"/>
               <p className="text-menu-mobi-check">KHUYẾN MÃI</p>
             </>
             :
             <>
-              <img src="/img_mobile/menu_mobi/gift.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/promotion.png" className="menu-mobi-icon"/>
               <p className="text-menu-mobi-uncheck">KHUYẾN MÃI</p>
             </>
           }
@@ -110,12 +110,12 @@ const MenuMobi = () => {
             isPhone ? 
             <>
               <img src="/img_mobile/menu_mobi/check.png" className="phone-check"/>
-              <img src="/img_mobile/menu_mobi/phone_active.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/cskh-active.png" className="menu-mobi-icon"/>
               <p className="text-menu-mobi-check">CSKH</p>
             </>
             :
             <>
-              <img src="/img_mobile/menu_mobi/phone.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/cskh.png" className="menu-mobi-icon"/>
               <p className="text-menu-mobi-uncheck">CSKH</p>
             </>
           }
@@ -131,7 +131,7 @@ const MenuMobi = () => {
             </>
             :
             <>
-              <img src="/img_mobile/icon_menu_header/icon_news_mobi.png" className="menu-mobi-icon"/>
+              <img src="/img_mobile/icon_menu_header/kenh-tin-khac.png" className="menu-mobi-icon"/>
               <p className="text-menu-mobi-uncheck">KÊNH TIN KHÁC</p>
             </>
           }
