@@ -3,64 +3,64 @@ import React from "react";
 
 const BestCasino = () => {
   return (
-    <div className="container pt-4">
+    <div className="container pt-4 pb-4 best-casino">
       <div className="title text-center">
         <span>CÁC NHÀ CÁI UY TÍN</span>
       </div>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 position-relative">
           <Image
-            src={"/img_casino/casino_789bet.png"}
+            src={"/img_casino/A1.png"}
             width={590}
             height={215}
             alt="nhà cái 789bet"
-            style={{ objectFit: "contain" }}
           />
+          <span>CASINO - TÔI CHỈ CHỌN 789BET</span>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 position-relative">
           <Image
-            src={"/img_casino/casino_new88.png"}
+            src={"/img_casino/A2.png"}
             width={590}
             height={215}
             alt="nhà cái new88"
-            style={{ objectFit: "contain" }}
           />
+          <span>NƠI CẢM XÚC KHÔNG GIỚI HẠN</span>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 position-relative">
           <Image
-            src={"/img_casino/casino_hi88.png"}
+            src={"/img_casino/A3.png"}
             width={590}
             height={215}
             alt="nhà cái hi88"
-            style={{ objectFit: "contain" }}
           />
+          <span>CƯỢC GIẢI TRÍ, KIẾM TIỀN TỶ</span>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 position-relative">
           <Image
-            src={"/img_casino/casino_shbet.png"}
+            src={"/img_casino/A4.png"}
             width={590}
             height={215}
             alt="nhà cái shbet"
-            style={{ objectFit: "contain" }}
           />
+          <span>THẾ GIỚI CASINO TRONG TAY BẠN</span>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 position-relative">
           <Image
-            src={"/img_casino/casino_f8.png"}
+            src={"/img_casino/A5.png"}
             width={590}
             height={215}
             alt="nhà cái f8bet"
-            style={{ objectFit: "contain" }}
           />
+          <span>THỬ NGAY VẬN MAY SẼ ĐẾN</span>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 position-relative">
           <Image
-            src={"/img_casino/casino_jun88.png"}
+            src={"/img_casino/A6.png"}
             width={590}
             height={215}
             alt="nhà cái jun88"
-            style={{ objectFit: "contain" }}
           />
+          <span>BÙNG CHÁY KHÁT KHAO TRONG BẠN</span>
         </div>
       </div>
     </div>

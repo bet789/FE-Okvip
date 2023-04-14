@@ -28,12 +28,15 @@ const Report = () => {
           <form className="text-start">
             <div className="input-item">
               <p className="title-input">Địa chỉ Email</p>
-              <input className="title-input-text" placeholder="Nhập Email" />
+              <input
+                className="title-input-text pt-3 pb-3"
+                placeholder="Nhập Email"
+              />
             </div>
             <div className="input-item content ">
               <p className="title-input pt-4">ý kiến của bạn</p>
               <input
-                className="title-input-text"
+                className="title-input-text pt-3 pb-3"
                 placeholder="Nhập nội dung cần phản hồi"
               />
             </div>
@@ -53,7 +56,7 @@ const Report = () => {
               lớn tiền mặt và tiền thưởng khuyến mại...
             </ReadMore>
           </div>
-          <div className="text-start pt-2">
+          <div className="text-start ">
             <button className="btn-send">
               <span>GỬI PHẢN HỒI</span>
             </button>
