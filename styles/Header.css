@@ -1,5 +1,5 @@
 .bg-header {
-  background: url(/bg-header.png);
+  background: url(./bg-header.png);
   background-size: cover;
   height: 619px;
   width: 100%;

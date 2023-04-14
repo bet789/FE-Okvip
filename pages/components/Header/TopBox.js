@@ -21,7 +21,7 @@ const TopBox = () => {
           <form action="#" method="post">
             <button type="submit" className="btn-search pe-2">
               <Image
-                src={"/search.png"}
+                src={"./search.png"}
                 width={20}
                 height={20}
                 alt="search icon"

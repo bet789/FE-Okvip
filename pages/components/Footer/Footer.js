@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="container-fluid" style={{ backgroundColor: "#292524" }}>
       <div className="logo-footer text-center p-4">
         <Image
-          src={"/logo-footer.png"}
+          src={"./logo-footer.png"}
           width={297}
           height={105}
           alt="logo footer"
