@@ -7,7 +7,7 @@ export default function Brand() {
       <div className="list-brand">
         <div className="brand-item">
           <Image
-            src={"./img_brand/logo-brand-1.png"}
+            src={"/img_brand/logo-brand-1.png"}
             width={122}
             height={123}
             alt="logo brand "
@@ -15,7 +15,7 @@ export default function Brand() {
         </div>
         <div className="brand-item">
           <Image
-            src={"./img_brand/logo-brand-2.png"}
+            src={"/img_brand/logo-brand-2.png"}
             width={155}
             height={134}
             alt="logo brand "
@@ -23,7 +23,7 @@ export default function Brand() {
         </div>
         <div className="brand-item">
           <Image
-            src={"./img_brand/logo-brand-3.png"}
+            src={"/img_brand/logo-brand-3.png"}
             width={120}
             height={119}
             alt="logo brand "
@@ -31,7 +31,7 @@ export default function Brand() {
         </div>
         <div className="brand-item">
           <Image
-            src={"./img_brand/logo-brand-4.png"}
+            src={"/img_brand/logo-brand-4.png"}
             width={339}
             height={121}
             alt="logo brand "

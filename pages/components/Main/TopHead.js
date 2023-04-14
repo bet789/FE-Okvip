@@ -8,7 +8,7 @@ const TopHead = () => {
       <div className="list-btn-head">
         <button className="btn-item">
           <Image
-            src={"./icon_btn/giftbox.png"}
+            src={"/icon_btn/giftbox.png"}
             width={32}
             height={38}
             alt="icon khuyến mãi"
@@ -17,7 +17,7 @@ const TopHead = () => {
         </button>
         <button className="btn-item">
           <Image
-            src={"./icon_btn/Vector.png"}
+            src={"/icon_btn/Vector.png"}
             width={32}
             height={38}
             alt="icon game hot"
@@ -26,7 +26,7 @@ const TopHead = () => {
         </button>
         <button className="btn-item">
           <Image
-            src={"./icon_btn/member.png"}
+            src={"/icon_btn/member.png"}
             width={32}
             height={38}
             alt="icon thành viên"
@@ -35,7 +35,7 @@ const TopHead = () => {
         </button>
         <button className="btn-item">
           <Image
-            src={"./icon_btn/News.png"}
+            src={"/icon_btn/News.png"}
             width={32}
             height={38}
             alt="icon kênh tin khác"
@@ -44,7 +44,7 @@ const TopHead = () => {
         </button>
         <button className="btn-item">
           <Image
-            src={"./icon_btn/Report.png"}
+            src={"/icon_btn/Report.png"}
             width={32}
             height={38}
             alt="icon đóng góp ý kiến"

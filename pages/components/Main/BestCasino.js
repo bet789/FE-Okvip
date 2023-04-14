@@ -10,7 +10,7 @@ const BestCasino = () => {
       <div className="row">
         <div className="col-md-6">
           <Image
-            src={"./img_casino/casino_789bet.png"}
+            src={"/img_casino/casino_789bet.png"}
             width={590}
             height={215}
             alt="nhà cái 789bet"
@@ -19,7 +19,7 @@ const BestCasino = () => {
         </div>
         <div className="col-md-6">
           <Image
-            src={"./img_casino/casino_new88.png"}
+            src={"/img_casino/casino_new88.png"}
             width={590}
             height={215}
             alt="nhà cái new88"
@@ -28,7 +28,7 @@ const BestCasino = () => {
         </div>
         <div className="col-md-6">
           <Image
-            src={"./img_casino/casino_hi88.png"}
+            src={"/img_casino/casino_hi88.png"}
             width={590}
             height={215}
             alt="nhà cái hi88"
@@ -37,7 +37,7 @@ const BestCasino = () => {
         </div>
         <div className="col-md-6">
           <Image
-            src={"./img_casino/casino_shbet.png"}
+            src={"/img_casino/casino_shbet.png"}
             width={590}
             height={215}
             alt="nhà cái shbet"
@@ -46,7 +46,7 @@ const BestCasino = () => {
         </div>
         <div className="col-md-6">
           <Image
-            src={"./img_casino/casino_f8.png"}
+            src={"/img_casino/casino_f8.png"}
             width={590}
             height={215}
             alt="nhà cái f8bet"
@@ -55,7 +55,7 @@ const BestCasino = () => {
         </div>
         <div className="col-md-6">
           <Image
-            src={"./img_casino/casino_jun88.png"}
+            src={"/img_casino/casino_jun88.png"}
             width={590}
             height={215}
             alt="nhà cái jun88"
