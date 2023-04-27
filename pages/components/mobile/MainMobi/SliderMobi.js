@@ -10,11 +10,11 @@ import "swiper/css/pagination";
 import "swiper/css/virtual";
 
 const slide_img = [
-  "/img_mobile/slide_mobi/BANCA.png",
-  "/img_mobile/slide_mobi/casino.png",
-  "/img_mobile/slide_mobi/gamebai.png",
-  "/img_mobile/slide_mobi/nohu.png",
-  "/img_mobile/slide_mobi/THETHAO.png",
+  "/slide-mobile/banca.png",
+  "/slide-mobile/gamebai.png",
+  "/slide-mobile/nohu.png",
+  "/slide-mobile/songbai.png",
+  "/slide-mobile/thethao.png",
 ];
 SwiperCore.use([Autoplay, Pagination]);
 const SliderMobi = () => {
