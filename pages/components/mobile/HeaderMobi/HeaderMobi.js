@@ -101,7 +101,7 @@ const HeaderMobi = () => {
                   <li class="nav-item active">
                     <a class="nav-link" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/promotion.png"
+                        src="/img_mobile/icon_menu_header/icon_promotion.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -113,7 +113,7 @@ const HeaderMobi = () => {
                   <li class="nav-item">
                     <a class="nav-link" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/game-hot.png"
+                        src="/img_mobile/icon_menu_header/icon_game_hot_mobi.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -125,7 +125,7 @@ const HeaderMobi = () => {
                   <li class="nav-item ">
                     <a class="nav-link" href="#" role="button">
                       <img
-                        src="/img_mobile/icon_menu_header/icon_member_mobi.png"
+                        src="/img_mobile/icon_menu_header/icon_member.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -137,7 +137,7 @@ const HeaderMobi = () => {
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/icon_news_mobi.png"
+                        src="/img_mobile/icon_menu_header/icon_news_mobi_2.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -146,10 +146,23 @@ const HeaderMobi = () => {
                       KÊNH TIN KHÁC
                     </a>
                   </li>
+
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/icon_report_mobi.png"
+                        src="/img_mobile/icon_menu_header/icon_report_mobi_2.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      ĐÓNG GÓP Ý KIẾN
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_tuyendung.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -161,25 +174,13 @@ const HeaderMobi = () => {
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/icon_report_mobi.png"
+                        src="/img_mobile/icon_menu_header/icon_18.png"
                         width="20"
                         height="20"
                         className="me-2"
                         style={{ objectFit: "contain" }}
                       />
-                      XEM PHIM 18+
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">
-                      <img
-                        src="/img_mobile/icon_menu_header/icon_report_mobi.png"
-                        width="20"
-                        height="20"
-                        className="me-2"
-                        style={{ objectFit: "contain" }}
-                      />
-                      ĐÓNG GÓP Ý KIẾN
+                      PHIM 18+
                     </a>
                   </li>
                 </ul>

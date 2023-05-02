@@ -18,9 +18,9 @@ const Main = () => {
       {/* <BestDeal /> */}
       {/* <BestWithdraw /> */}
       <BestCasino />
-      <Accompany />
+      {/* <Accompany /> */}
       {/* <Social /> */}
-      <Brand />
+      {/* <Brand /> */}
     </div>
   );
 };

@@ -43,6 +43,16 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.bg-footer {
+  background: url(/img_accompany/bgdonghanh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  padding-top: 20px;
+}
+.bg-footer .des {
+  text-align: justify;
+}
 .main .title {
   font-family: "UTM Avo";
   font-style: normal;
@@ -55,14 +65,13 @@
 
   color: #000000;
 }
-.main .title-accompany {
+.title-accompany {
   font-family: "UTM Avo";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 73px;
   letter-spacing: 0.06em;
-  text-align: center;
   color: #ff9900;
 }
 .best-casino .col-md-6 span {
@@ -158,7 +167,7 @@
   border-radius: 8px;
   border: 2px solid #ffffff;
 }
-.main .slide-accompany {
+.slide-accompany {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -189,10 +198,10 @@
   border-bottom: 10px solid transparent;
 }
 .slide-accompany .swiper-button-prev {
-  left: -70px;
+  left: -90px;
 }
 .slide-accompany .swiper-button-next {
-  right: -50px;
+  right: -80px;
 }
 .social {
   background-color: #e7e7e7;
@@ -214,14 +223,36 @@
 .bannerMobi {
   position: relative;
 }
-
+.bg-gradient-header-mobi {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(1, 3, 3, 0) 0%, #00000091 46.35%);
+  bottom: 0;
+}
 .textBanner {
   position: absolute;
-  top: 50px;
   width: 100%;
   padding: 10px;
+  bottom: 0;
 }
-
+.textBannerTop {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  top: 18px;
+}
+.textBannerTop p {
+  font-family: "UTM HelvetIns";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 81px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff9900;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .textBanner p {
   font-family: UTM_HELVETLNS;
   text-transform: uppercase;
