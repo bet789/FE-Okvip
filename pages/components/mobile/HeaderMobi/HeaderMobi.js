@@ -84,14 +84,14 @@ const HeaderMobi = () => {
               />
             )}
           </Link>
-          <div className="profile-mobile">
+          {/* <div className="profile-mobile">
             <img
               src="/img_mobile/icon_profile_mobi.png"
               width={24}
               height={24}
               alt=""
             />
-          </div>
+          </div> */}
         </div>
         {navMenu === true ? (
           <div className="menu-mobile p-0" onClick={handleOutSideMenu}>
@@ -101,7 +101,7 @@ const HeaderMobi = () => {
                   <li class="nav-item active">
                     <a class="nav-link" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/icon_giftbox_mobi.png"
+                        src="/img_mobile/icon_menu_header/promotion.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -113,7 +113,7 @@ const HeaderMobi = () => {
                   <li class="nav-item">
                     <a class="nav-link" href="#">
                       <img
-                        src="/img_mobile/icon_menu_header/icon_vector_mobi.png"
+                        src="/img_mobile/icon_menu_header/game-hot.png"
                         width="20"
                         height="20"
                         className="me-2"
@@ -144,6 +144,30 @@ const HeaderMobi = () => {
                         style={{ objectFit: "contain" }}
                       />
                       KÊNH TIN KHÁC
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_report_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      TUYỂN DỤNG
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                      <img
+                        src="/img_mobile/icon_menu_header/icon_report_mobi.png"
+                        width="20"
+                        height="20"
+                        className="me-2"
+                        style={{ objectFit: "contain" }}
+                      />
+                      XEM PHIM 18+
                     </a>
                   </li>
                   <li class="nav-item">

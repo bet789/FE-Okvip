@@ -89,7 +89,7 @@ export default function FooterMobi() {
           </Swiper>
         </div>
       </div>
-      <div className="contact">
+      {/* <div className="contact">
         <div className="icon-contact">
           <div className="icon-contact-item">
             <svg
@@ -246,7 +246,7 @@ export default function FooterMobi() {
             </svg>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="footer-content">
         <div className="icon-content">

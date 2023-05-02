@@ -138,7 +138,9 @@ a {
   text-decoration: none;
   color: black;
 }
-
+a {
+  text-decoration: none !important;
+}
 @media screen and (max-width: 440px) {
   .every .btn-report-rate {
     width: 50% !important;

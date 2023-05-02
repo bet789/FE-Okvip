@@ -152,18 +152,18 @@ const MenuMobi = () => {
               className="account-check"
             />
             <img
-              src="/img_mobile/icon_menu_header/kenh-tin-khac-active.png"
+              src="/img_mobile/icon_profile_mobi_active.png"
               className="menu-mobi-icon"
             />
-            <p className="text-menu-mobi-check">KÊNH TIN KHÁC</p>
+            <p className="text-menu-mobi-check">TÀI KHOẢN</p>
           </>
         ) : (
           <>
             <img
-              src="/img_mobile/icon_menu_header/kenh-tin-khac.png"
+              src="/img_mobile/icon_profile_mobi.png"
               className="menu-mobi-icon"
             />
-            <p className="text-menu-mobi-uncheck">KÊNH TIN KHÁC</p>
+            <p className="text-menu-mobi-uncheck">TÀI KHOẢN</p>
           </>
         )}
       </div>

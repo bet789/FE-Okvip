@@ -116,7 +116,6 @@
   .logo-mobile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 100%;
     width: 100%;
   }
@@ -148,6 +147,7 @@
   .menu-mobile {
     padding-left: 20px;
     height: 24px;
+    width: 35%;
   }
 
   .menu-mobile img {
