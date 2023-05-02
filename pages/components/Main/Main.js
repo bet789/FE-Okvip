@@ -19,7 +19,7 @@ const Main = () => {
       {/* <BestWithdraw /> */}
       <BestCasino />
       <Accompany />
-      <Social />
+      {/* <Social /> */}
       <Brand />
     </div>
   );
